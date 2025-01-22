@@ -56,7 +56,7 @@ function encodeURIWhatsappMessage() {
 
     let linkWhatsapp = `https://wa.me/${myWAnumber}?text=${encodeURIComponent(mensagem)}`;
 
-    window.open(linkWhatsapp, '_blank');
+    window.open(linkWhatsapp, '_self');
 }
 
 function SendMessage() {
