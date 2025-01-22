@@ -1,0 +1,157 @@
+* {
+    outline: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.img-perfil {
+    margin-top: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section {
+    width: 80%;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+h5 {
+    margin-top: 0px;
+}
+
+.img-perfil {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.inputs {
+    margin: 10px 0px;
+    padding: 4px;
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.no-column {
+    display: inline-flex;
+}
+
+.inputs label {
+    margin: 8px 0px;
+    margin-right: 10px;
+    font-weight: 300;
+}
+
+.inputs input[type="text"],
+.inputs input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.inputs input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.inputs input[type="time"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.inputs select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.no-column-select {
+    max-width: 160px;
+}
+
+.btn-send {
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 500;
+    background: #fb496d;
+    padding: 5px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.msg-card {
+    width: 250px;
+    height: 20px;
+    padding: 10px;
+    background: #ff3333;
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    border-radius: 4px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all .5s;
+}
+
+a {
+    text-decoration: none;
+}
+
+.WAlink {
+    color: #292929d1;
+}
+
+.reveal {
+    animation: msg-card-reveal 1s ease-in-out 1 forwards;
+}
+
+.hidden {
+    animation: msg-card-reveal .5s reverse 1 forwards;
+}
+
+@keyframes msg-card-reveal {
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    margin-top: 120px;
+    background: #000;
+}
+
+
+/*Fim do código :)*/
